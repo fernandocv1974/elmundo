@@ -1,0 +1,19 @@
+// declarar variables
+$base-color: #dedede;
+
+// mixin
+@mixin btn_blue {
+  display: inline-block;
+  background: rgb(0,0,255);
+}
+
+nav {
+    width:100%;
+    max-width: 900px;
+    a {
+        color:rgb(255,0,0);
+        @include btn_blue;
+    }
+}
+p { color:$base-color;}
+
